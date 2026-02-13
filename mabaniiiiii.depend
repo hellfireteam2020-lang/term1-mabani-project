@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1770935325 source:c:\users\sarayetel\desktop\mabaniiiiii\demonstration.cpp
+	<iostream>
+	"matrix_library.h"
+
+1770789607 c:\users\sarayetel\desktop\mabaniiiiii\matrix_library.h
+
+1770936006 source:c:\users\sarayetel\desktop\mabaniiiiii\matrix_library.cpp
+	<iostream>
+	<cmath>
+	"matrix_library.h"
+
