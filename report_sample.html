@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>گزارش عملیات ماتریسی و برداری</title>
+    <style>
+        /* استایل بدنه و هدر طبق درخواست شما */
+        body {
+            font-family: 'Tahoma', sans-serif;
+            background-color: white;
+            color: black;
+            margin: 0;
+            padding: 20px;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        section {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        h2 {
+            border-bottom: 2px solid black;
+            padding-bottom: 10px;
+        }
+
+        /* استایل جداگانه برای نمایش ماتریس‌ها */
+        .matrix-container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin: 10px;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+            min-width: 40px;
+        }
+
+        .dimension-label {
+            font-size: 0.8em;
+            color: #555;
+            font-weight: bold;
+        }
+
+        .input-box {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-right: 5px solid #ccc;
+        }
+
+        .output-box {
+            background-color: #f0fff0;
+            padding: 10px;
+            border-right: 5px solid #4CAF50;
+        }
+
+        .error-box {
+            background-color: #fff0f0;
+            padding: 10px;
+            border-right: 5px solid #f44336;
+        }
+
+        .math-symbol {
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+     
+    <header>
+        <h1>پروژه پایان‌ترم مبانی کامپیوتر</h1>
+        <p>نام دانشجو: محمد حسین جواهری | شماره دانشجویی: 1404010121029]</p>
+    </header>
+     
+    <section>
+        <h2>۱. عملیات جمع ماتریس‌ها</h2>
+        <div class="input-box">
+            <p><strong>ورودی‌ها:</strong></p>
+            <div class="matrix-container">
+                <div>
+                    <span class="dimension-label">Matrix A (2x2)</span>
+                    <table>
+                        <tr>
+                            <td>5</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>8</td>
+                        </tr>
+                    </table>
+                </div>
+                <span class="math-symbol">+</span>
+                <div>
+                    <span class="dimension-label">Matrix B (2x2)</span>
+                    <table>
+                        <tr>
+                            <td>2</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>0</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+         
+        <div class="output-box">
+            <p><strong>خروجی (Result):</strong></p>
+            <table>
+                <tr>
+                    <td>7</td>
+                    <td>14</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>8</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+     
+    <section>
+        <h2>۲. محاسبه دترمینان</h2>
+        <div class="input-box">
+            <p>ورودی: ماتریس مربعی (2x2)</p>
+            <table>
+                <tr>
+                    <td>4</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>6</td>
+                </tr>
+            </table>
+        </div>
+        <div class="output-box">
+            <p><strong>دترمینان محاسبه شده:</strong> 10</p>
+        </div>
+    </section>
+     
+    <section>
+        <h2>۳. معکوس ماتریس</h2>
+        <div class="error-box">
+            <p><strong>پیغام
+                    خطا:</strong> ماتریس منفرد است (دترمینان صفر)؛ [span_1](start_span)معکوس‌پذیر
+                نمی‌باشد.[span_1](end_span)</p>
+        </div>
+    </section>
+     
+</body>
+
+</html>
